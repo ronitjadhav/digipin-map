@@ -18,14 +18,14 @@ const About: NextPage = () => {
                     </p>
                     <p className="text-lg mb-4 dark:text-gray-300">
                         The Department has collaborated with <strong>IIT Hyderabad</strong> to develop a National Level
-                        Addressing Grid-based system. DIGIPIN divides India's geographical territory into uniform
+                        Addressing Grid-based system. DIGIPIN divides India&apos;s geographical territory into uniform
                         4-meter by 4-meter units, assigning each a unique 10-digit alphanumeric code derived from the
                         latitude and longitude coordinates of the unit.
                     </p>
                     <p className="text-lg mb-4 dark:text-gray-300">
                         This system will act as a strong and robust pillar of Geospatial Governance, enhancing public
                         service delivery, improving emergency response times, and significantly boosting logistics
-                        efficiency. The advent of DIGIPIN marks a revolutionary step in India's digital transformation
+                        efficiency. The advent of DIGIPIN marks a revolutionary step in India&apos;s digital transformation
                         journey by bridging the gap between physical locations and their digital representation.
                     </p>
                     <p className="text-lg mb-4 dark:text-gray-300">
