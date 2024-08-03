@@ -10,7 +10,7 @@ const About: NextPage = () => {
                     <title>About DIGIPIN</title>
                 </Head>
                 <div className="max-w-6xl mx-auto flex flex-col lg:flex-row gap-8">
-                    <div className="flex-1 p-6 rounded-lg shadow-md dark:bg-zinc-800 min-w-[300px]">
+                    <div className="flex-1 p-6 rounded-lg shadow-md bg-white dark:bg-zinc-800 min-w-[300px]">
                         <h1 className="text-3xl font-bold text-center mb-8 dark:text-white">About DIGIPIN</h1>
                         <p className="text-lg mb-4 dark:text-gray-300">
                             The <strong>Department of Posts in India</strong> is advancing an initiative to establish a
