@@ -7,11 +7,7 @@ interface DigipinDisplayProps {
 const DigipinDisplay: React.FC<DigipinDisplayProps> = ({ digipin }) => {
     return (
         <div>
-            {digipin ? (
-                <h1>{digipin}</h1>
-            ) : (
-                <h1>Please click on the map to get Digipin</h1>
-            )}
+            <h1>{digipin}</h1>
         </div>
     );
 };

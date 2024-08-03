@@ -9,6 +9,7 @@ import { transform } from 'ol/proj';
 import Overlay from 'ol/Overlay';
 import './map-container.css';
 import { getDIGIPINFromLatLon } from 'digipin';
+import {PlaceholdersAndVanishInputDemo} from "@/components/search-bar";
 
 interface MapContainerProps {
     setDigipin: (digipin: string) => void;
@@ -45,7 +46,7 @@ const MapContainer: React.FC<MapContainerProps> = ({ setDigipin }) => {
             const [longitude, latitude] = transform(coordinates, 'EPSG:3857', 'EPSG:4326');
             const digipin = await getDIGIPINFromLatLon(latitude, longitude);
             setDigipin(digipin);
-            popupContentRef.current!.innerHTML = `<p>Latitude: ${latitude}, Longitude: ${longitude}</p><p>DIGIPIN: ${digipin}</p>`;
+            popupContentRef.current!.innerHTML = `<p>Latitude: ${latitude} <br> Longitude: ${longitude}</p><p>DIGIPIN: ${digipin}</p>`;
             overlay.setPosition(coordinates);
         });
 
@@ -64,9 +65,13 @@ const MapContainer: React.FC<MapContainerProps> = ({ setDigipin }) => {
 
     return (
         <div className='relative'>
-            <div ref={mapRef} className='h-[calc(100vh-250px)] mt-1 ml-20 mr-20'/>
+            <div ref={mapRef} className='h-[calc(100vh-200px)] mt-1 ml-8 mr-8 rounded-3xl overflow-hidden relative'>
+                <div className='absolute bottom-4 z-10 w-full'>
+                    <PlaceholdersAndVanishInputDemo />
+                </div>
+            </div>
             <div ref={popupContainerRef} className='ol-popup'>
-            <a ref={popupCloserRef} href='#' className='ol-popup-closer'></a>
+                <a ref={popupCloserRef} href='#' className='ol-popup-closer'></a>
                 <div ref={popupContentRef} className='ol-popup-content'></div>
             </div>
         </div>
