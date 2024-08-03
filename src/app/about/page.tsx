@@ -3,12 +3,12 @@ import Head from 'next/head';
 
 const About: NextPage = () => {
     return (
-        <div className="min-h-screen py-8 px-4 sm:px-6 lg:px-8 text-gray-900 pt-20">
+        <div className="min-h-screen py-8 px-4 sm:px-6 lg:px-8 text-gray-900 pt-20 mt-5">
             <Head>
                 <title>About DIGIPIN</title>
             </Head>
             <div className="max-w-6xl mx-auto flex flex-col lg:flex-row gap-8">
-                <div className="flex-1 p-6 rounded-lg shadow-md dark:bg-gray-900 min-w-[300px]">
+                <div className="flex-1 p-6 rounded-lg shadow-md dark:bg-zinc-800 min-w-[300px]">
                     <h1 className="text-3xl font-bold text-center mb-8 dark:text-white">About DIGIPIN</h1>
                     <p className="text-lg mb-4 dark:text-gray-300">
                         The <strong>Department of Posts in India</strong> is advancing an initiative to establish a standardized,
@@ -51,20 +51,20 @@ const About: NextPage = () => {
                     </p>
                 </div>
 
-                <div className="flex-1 p-6 rounded-lg shadow-md bg-white dark:bg-gray-900 min-w-[300px]">
+                <div className="flex-1 p-6 rounded-lg shadow-md bg-white dark:bg-zinc-800 min-w-[300px]">
                     <h2 className="text-3xl font-bold text-center mb-8 dark:text-white">Want to Implement DIGIPIN in Your Project?</h2>
                     <p className="text-lg mb-4 dark:text-gray-300">
                         You can easily integrate DIGIPIN into your project by installing the DIGIPIN NPM package. This package allows you to convert latitude and longitude coordinates into a DIGIPIN code and vice versa, making it a crucial tool for geospatial applications.
                     </p>
                     <h3 className="text-2xl font-bold mb-4 dark:text-white">Installation</h3>
-                    <pre className="bg-gray-100 dark:bg-gray-700 p-4 rounded mb-6">
+                    <pre className="bg-gray-100 dark:bg-gray-900 p-4 rounded mb-6">
             <code className="text-gray-900 dark:text-gray-300">npm install digipin</code>
           </pre>
                     <h3 className="text-2xl font-bold mb-4 dark:text-white">Usage</h3>
                     <p className="text-lg mb-4 dark:text-gray-300">
                         To use the DIGIPIN NPM package, import the package and use the provided functions to convert between latitude/longitude and DIGIPIN codes.
                     </p>
-                    <pre className="bg-gray-100 dark:bg-gray-700 p-4 rounded mb-6 overflow-auto">
+                    <pre className="bg-gray-100 dark:bg-gray-900 p-4 rounded mb-6 overflow-auto">
             <code className="text-gray-900 dark:text-gray-300">
 {`import digipin from 'digipin';
 
