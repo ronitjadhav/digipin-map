@@ -18,8 +18,8 @@ export function FloatingNavDemo() {
         },
     ];
     return (
-        <div className="relative w-full">
-            <FloatingNav navItems={navItems} className="fixed mt-5 left-0 w-full z-50" />
+        <div className="relative w-full z-20">
+            <FloatingNav navItems={navItems} className="fixed mt-5 left-0 w-full z-20" />
         </div>
     );
 }

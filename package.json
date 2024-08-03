@@ -17,6 +17,7 @@
     "digipin": "^0.0.1-dev",
     "framer-motion": "^11.3.19",
     "lucide-react": "^0.416.0",
+    "mini-svg-data-uri": "^1.4.4",
     "next": "14.2.5",
     "next-themes": "^0.3.0",
     "react": "^18",
