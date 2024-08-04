@@ -1,10 +1,5 @@
 @import "ol/ol.css";
 
-.ol-zoom {
-  top: calc(100% - .5em*2 - 1.375em*2);
-  left: calc(100% - .5em*2 - 1.375em);
-}
-
 
 @tailwind base;
 @tailwind components;
