@@ -14,7 +14,7 @@ const Dashboard = () => {
     return (
 
         <div
-            className="h-screen w-full dark:bg-black bg-white  dark:bg-dot-white/[0.3] bg-dot-black/[0.3] relative flex items-center justify-center">
+            className="h-screen w-full dark:bg-black bg-white dark:bg-dot-white/[0.3] bg-dot-black/[0.3] relative flex items-center justify-center">
             <div className="absolute w-full h-full mt-52">
                 <MapContainer setDigipin={setDigipin}/>
                 {digipin && (
